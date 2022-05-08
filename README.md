@@ -1,2 +1,2 @@
 # BodyshapeRecognition
-This is Biometric corsework
+This is the Biometric corsework.
