@@ -61,8 +61,8 @@ class frontExtract:
 
         #print(point)
 
-        self.features['lefteye_len'] = np.linalg.norm(point[1]-point[3])*10
-        self.features['righteye_len']= np.linalg.norm(point[4]-point[6])*10
+        self.features['lefteye_len'] = np.linalg.norm(point[1]-point[3])*30
+        self.features['righteye_len']= np.linalg.norm(point[4]-point[6])*30
         #self.features['mouth_len'] = np.linalg.norm(point[10]-point[9])
         #self.features['0-11'] = np.linalg.norm(point[0]-point[11])
         #self.features['0-12'] = np.linalg.norm(point[0]-point[12])
@@ -155,11 +155,14 @@ class sideExtract:
         self.features['leftshin_len'] = np.linalg.norm(point[25]-point[27])
         self.features['11-27'] = np.linalg.norm(point[11]-point[27])
 
-        self.features['27-29'] = np.linalg.norm(point[27]-point[29])
-        self.features['27-31'] = np.linalg.norm(point[27]-point[31])
-        self.features['s0-7'] = np.linalg.norm(point[0]-point[7])*20
-        self.features['s0-2'] = np.linalg.norm(point[0]-point[2])*20
-        self.features['s2-7'] = np.linalg.norm(point[2]-point[7])*10
+        #self.features['27-29'] = np.linalg.norm(point[27]-point[29])
+        #self.features['27-31'] = np.linalg.norm(point[27]-point[31])
+        self.features['s0-7'] = np.linalg.norm(point[0]-point[7])*22
+        self.features['s0-2'] = np.linalg.norm(point[0]-point[2])*22
+        self.features['s2-7'] = np.linalg.norm(point[2]-point[7])*5
+        self.features['s0-11'] = np.linalg.norm(point[0]-point[11])
+        self.features['s0-9'] = np.linalg.norm(point[0]-point[9])*5
+        
 
         return self.features
     
