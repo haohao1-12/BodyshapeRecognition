@@ -1,7 +1,25 @@
-from Extraction import Extract
+from Extraction import *
+import os
+# DataBase is a list
+DB = []
+files = os.listdir('D:/File/BodyshapeRecognition/Picture/training')
 
-example1 = Extract('pose1.jpg')
-example2 = Extract('side1.jpg')
-#print(example.exe()['lefteye_len'])
-for i in range(len(example1.exe())):
-    selected_features = 
+for k in range(int(len(files)/2)):
+    example1 = frontExtract('D:/File/BodyshapeRecognition/Picture/training'+'/'+files[2*k])
+    example2 = sideExtract('D:/File/BodyshapeRecognition/Picture/training'+'/'+files[2*k+1])
+    selected_features = []
+
+    #print(example.exe()['lefteye_len'])
+    for i in example1.exe().values():
+        selected_features.append(i)
+    for j in example2.exe().values():
+        selected_features.append(j)
+
+    DB.append(selected_features)
+
+#print(DB)
+#print(len(DB))
+
+
+
+#print(files)
