@@ -81,6 +81,6 @@ class Extract:
     
 
 
-example = Extract('pose1.jpg')
-print(example.exe()['lefteye_len'])
+#example = Extract('pose1.jpg')
+#print(example.exe()['lefteye_len'])
 
