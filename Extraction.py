@@ -66,12 +66,12 @@ class frontExtract:
         #self.features['mouth_len'] = np.linalg.norm(point[10]-point[9])
         #self.features['0-11'] = np.linalg.norm(point[0]-point[11])
         #self.features['0-12'] = np.linalg.norm(point[0]-point[12])
-        self.features['0-27'] = np.linalg.norm(point[0]-point[5])*10
-        self.features['0-28'] = np.linalg.norm(point[0]-point[2])*10
+        self.features['0-27'] = np.linalg.norm(point[0]-point[27])
+        self.features['0-28'] = np.linalg.norm(point[0]-point[28])
         self.features['0-25'] = np.linalg.norm(point[0]-point[25])
         self.features['0-26'] = np.linalg.norm(point[0]-point[26])
-        self.features['0-5'] = np.linalg.norm(point[0]-point[5])
-        self.features['0-2'] = np.linalg.norm(point[0]-point[2])
+        self.features['0-5'] = np.linalg.norm(point[0]-point[5])*10
+        self.features['0-2'] = np.linalg.norm(point[0]-point[2])*10
         self.features['0-7'] = np.linalg.norm(point[0]-point[7])*10
         self.features['0-8'] = np.linalg.norm(point[0]-point[8])*10
         #self.features['0-10'] = np.linalg.norm(point[0]-point[10])
