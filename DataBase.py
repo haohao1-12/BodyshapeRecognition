@@ -4,6 +4,7 @@ def DataBase():
     # DataBase is a list
     DB = []
     files = os.listdir('D:/File/BodyshapeRecognition/Picture/training')
+    #print(files)
 
     for k in range(int(len(files)/2)):
         example1 = frontExtract('D:/File/BodyshapeRecognition/Picture/training'+'/'+files[2*k])
@@ -18,6 +19,8 @@ def DataBase():
 
         DB.append(selected_features)
     return DB
+
+DataBase()
 
     #print(DB)
     #print(len(DB))
