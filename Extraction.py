@@ -64,14 +64,18 @@ class frontExtract:
         self.features['lefteye_len'] = np.linalg.norm(point[1]-point[3])*30
         self.features['righteye_len']= np.linalg.norm(point[4]-point[6])*30
         #self.features['mouth_len'] = np.linalg.norm(point[10]-point[9])
-        #self.features['0-11'] = np.linalg.norm(point[0]-point[11])
-        #self.features['0-12'] = np.linalg.norm(point[0]-point[12])
+        self.features['0-11'] = np.linalg.norm(point[0]-point[11])
+        self.features['0-12'] = np.linalg.norm(point[0]-point[12])
         self.features['0-27'] = np.linalg.norm(point[0]-point[27])
         self.features['0-28'] = np.linalg.norm(point[0]-point[28])
         self.features['0-25'] = np.linalg.norm(point[0]-point[25])
         self.features['0-26'] = np.linalg.norm(point[0]-point[26])
         self.features['0-5'] = np.linalg.norm(point[0]-point[5])*10
         self.features['0-2'] = np.linalg.norm(point[0]-point[2])*10
+
+        #self.features['0-1'] = np.linalg.norm(point[0]-point[1])*5
+        #self.features['0-4'] = np.linalg.norm(point[0]-point[4])*5
+
         self.features['0-7'] = np.linalg.norm(point[0]-point[7])*10
         self.features['0-8'] = np.linalg.norm(point[0]-point[8])*10
         #self.features['0-10'] = np.linalg.norm(point[0]-point[10])
@@ -155,14 +159,19 @@ class sideExtract:
         self.features['leftshin_len'] = np.linalg.norm(point[25]-point[27])
         self.features['11-27'] = np.linalg.norm(point[11]-point[27])
 
-        #self.features['27-29'] = np.linalg.norm(point[27]-point[29])
+        self.features['27-29'] = np.linalg.norm(point[27]-point[29])
         #self.features['27-31'] = np.linalg.norm(point[27]-point[31])
         self.features['s0-7'] = np.linalg.norm(point[0]-point[7])*22
         self.features['s0-2'] = np.linalg.norm(point[0]-point[2])*22
         self.features['s2-7'] = np.linalg.norm(point[2]-point[7])*5
         self.features['s0-11'] = np.linalg.norm(point[0]-point[11])
         self.features['s0-9'] = np.linalg.norm(point[0]-point[9])*5
+        self.features['s7-11'] = np.linalg.norm(point[7]-point[11])*3
+
+        self.features['s7-9'] = np.linalg.norm(point[7]-point[9])*15
         
+        
+        self.features['s15-17'] = np.linalg.norm(point[15]-point[17])*5
 
         return self.features
     
