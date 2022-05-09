@@ -72,7 +72,7 @@ class frontExtract:
         self.features['leftthigh_len'] = np.linalg.norm(point[23]-point[25])
         self.features['rightthigh_len'] = np.linalg.norm(point[24]-point[26])
         self.features['leftshin_len'] = np.linalg.norm(point[25]-point[27])
-        self.features['leftshin_len'] = np.linalg.norm(point[26]-point[28])
+        self.features['rightshin_len'] = np.linalg.norm(point[26]-point[28])
         #self.features['leftfeet_len'] = np.linalg.norm(point[29]-point[31])
 
         return self.features
