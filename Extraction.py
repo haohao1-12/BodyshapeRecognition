@@ -149,14 +149,17 @@ class sideExtract:
 
         
         self.features['leftforearm_len'] = np.linalg.norm(point[15]-point[13])
-        #self.features['leftfeet_len'] = np.linalg.norm(point[29]-point[31])
+        self.features['leftfeet_len'] = np.linalg.norm(point[29]-point[31])
         self.features['leftupperarm_len'] = np.linalg.norm(point[11]-point[13])
         self.features['leftthigh_len'] = np.linalg.norm(point[23]-point[25])
         self.features['leftshin_len'] = np.linalg.norm(point[25]-point[27])
         self.features['11-27'] = np.linalg.norm(point[11]-point[27])
 
-        #self.features['27-29'] = np.linalg.norm(point[27]-point[29])
-        #self.features['27-31'] = np.linalg.norm(point[27]-point[31])
+        self.features['27-29'] = np.linalg.norm(point[27]-point[29])
+        self.features['27-31'] = np.linalg.norm(point[27]-point[31])
+        self.features['s0-7'] = np.linalg.norm(point[0]-point[7])*20
+        self.features['s0-2'] = np.linalg.norm(point[0]-point[2])*20
+        self.features['s2-7'] = np.linalg.norm(point[2]-point[7])*10
 
         return self.features
     
