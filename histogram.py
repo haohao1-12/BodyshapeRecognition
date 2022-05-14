@@ -37,7 +37,8 @@ for k in range(int(len(files)/2)):
 
     if output == answer[k]:
         colors[output-1] = 'b'
-    else:
+        
+    elif output != answer[k]:
         colors[output-1] = 'r'
         colors[answer[k]-1] = 'b'
 
